@@ -1,0 +1,140 @@
+@import url("bootstrap.css");
+/*# sourceMappingURL=styles.css.map */
+
+/**********VUE MOBILE**********/
+/***HEADER***/
+#colonne{
+    padding: 0;
+}
+/*PERMET DE COUPER SE QUI DEPASSE SUR LA PHOTO*/
+div{
+    overflow: hidden;
+}
+img#diapo{
+    height: 333px;
+}
+/*TEXTE*/
+#texte{
+    position: absolute;
+    color: white;
+    top: 50px;
+    text-align: center; 
+    right: 57px;
+}
+#texte>h1{
+    font-size: 2em;
+}
+#texte>h2{
+    font-size: 1em;
+}
+/*BURGER*/
+.navbar{
+    position: absolute;
+    right: 0;
+}
+/*FORMULAIRE*/
+#formulaire{
+    position: absolute;
+    top: 150px;
+    background-color: rgba(250, 250, 250, 0.5);
+}
+#case1{
+    margin-top: 10px;
+}
+#valider{
+    margin-bottom: 10px;
+}
+/***MAIN***/
+main{
+    padding-left: 25px;
+}
+#resultat>h1{
+    font-size: 2em;
+}
+#gauche, #droite {
+    font-size: 15px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+#droite {
+    right: 15px;
+}
+#gauche{
+    left: 5px;
+}
+#photo{
+    padding: 10px;
+}
+.card{
+    border: none;
+}
+#agence{
+    display:none;
+}
+
+/****VUE TABLETTE******/
+@media screen and (min-width: 720px){
+#formulaire{
+    right: 100px;
+}
+#texte{
+    right: 256px;
+    top: 31px;
+}
+.card{
+    border: none;
+}
+}
+#agence{
+    display:none;
+}
+
+/*******VUE ORDINATEUR********/
+@media screen and (min-width: 960px){
+img#diapo {
+    height: unset;
+    width: 100%;
+}
+#texte{
+    right: 675px;
+}
+#case1{
+    margin-top: 0;
+}
+#formulaire{
+    top:430px;
+    right: 480px;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+.card{
+    border: none;
+}
+ul{
+    background-color: white;
+}
+a.nav-link{
+    color: black !important;
+}
+/**PARTIE FOOTER**/
+#agence{
+    display: unset;
+}
+#centrer{
+    display: block;
+    margin: auto;
+}
+.card-body{
+    font-size: 0.5em;
+    padding-top: 0;
+}
+.card-title{
+    margin:0;
+}
+.card-text{
+    margin:0;
+}
+}
